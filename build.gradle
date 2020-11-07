@@ -1,0 +1,25 @@
+plugins {
+	id 'org.mytake.factset' version '1.1.0'
+}
+
+mtdoFactset {
+	title = 'TODO'
+	id = 'TODO'
+	videoJson { meta ->
+		// if you want to enforce any conventions on the fact title, you can do so here
+		meta.fact.title = meta.fact.title.toUpperCase()
+	}
+	videoTranscript {
+		// add or remove any rules you want: https://github.com/diffplug/spotless/tree/main/plugin-gradle#custom-steps
+		replace("Acronyms confuse our tooling 1", "D.C.", "DC");
+		replace("Acronyms confuse our tooling 2", "A.M.", "AM");
+		replace("Acronyms confuse our tooling 3", "P.M.", "PM");
+		replace("Percent is a word", " per cent", " percent");
+		replace("Adviser is canonical", "advisor", "adviser");    // http://grammarist.com/spelling/adviser-advisor/
+		replace("trickle-down canonical", "trickle down", "trickle-down"); // https://en.wikipedia.org/wiki/Trickle-down_economics
+		replace("AP stylebook says health care 1", "healthcare", "health care"); // https://www.esolutionsinc.com/resources/healthcare-technology/how-in-the-health-care-do-you-spell-healthcare/#:~:text=In%20the%20health%20care%20versus,AP%20deems%20it%20two%20words.&text=Therefore%2C%20news%20organizations%20across%20the,two%2Dword%20form%20without%20question.
+		replace("AP stylebook says health care 2", "health-care", "health care"); // https://www.esolutionsinc.com/resources/healthcare-technology/how-in-the-health-care-do-you-spell-healthcare/#:~:text=In%20the%20health%20care%20versus,AP%20deems%20it%20two%20words.&text=Therefore%2C%20news%20organizations%20across%20the,two%2Dword%20form%20without%20question.
+		replace("AP stylebook says health care 3", "Healthcare", "Health care"); // https://www.esolutionsinc.com/resources/healthcare-technology/how-in-the-health-care-do-you-spell-healthcare/#:~:text=In%20the%20health%20care%20versus,AP%20deems%20it%20two%20words.&text=Therefore%2C%20news%20organizations%20across%20the,two%2Dword%20form%20without%20question.
+		replace("AP stylebook says health care 4", "Health-care", "Health care"); // https://www.esolutionsinc.com/resources/healthcare-technology/how-in-the-health-care-do-you-spell-healthcare/#:~:text=In%20the%20health%20care%20versus,AP%20deems%20it%20two%20words.&text=Therefore%2C%20news%20organizations%20across%20the,two%2Dword%20form%20without%20question.
+	}
+}
