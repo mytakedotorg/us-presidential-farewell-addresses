@@ -1,4 +1,4 @@
-rootProject.name = 'TODO'
+rootProject.name = 'us-presidential-farewell-addresses'
 
 // if you clone https://github.com/mytakedotorg/mtdo into a folder next to this one
 // and uncomment the line below, then you can livetest the `org.mytake.factset` plugin.
