@@ -5,7 +5,7 @@
 This factset contains the farewell address of every U.S. President.
 
 ## Notes
-Before the advent of television, the only two presidents to issue a farewell address were George Washington and Andrew Jackson. Harry Truman issued the first televised farewell address in 1953, and every President has issued one since then, except John F Kennedy because he was assassinated.
+Before the advent of television, the only two presidents to issue a farewell address were George Washington and Andrew Jackson (unconfirmed, see [#1](https://github.com/mytakedotorg/us-presidential-farewell-addresses/issues/1)). Harry Truman issued the first televised farewell address in 1953, and every President has issued one since then, except John F Kennedy because he was assassinated.
 
 # Changelog
 
